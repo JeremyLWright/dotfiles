@@ -28,3 +28,6 @@
 [submodule "ghcmod-vim"]
 	path = ghcmod-vim
 	url = git@github.com:eagletmt/ghcmod-vim.git
+[submodule "vim/bundle/ghcmod-vim"]
+	path = vim/bundle/ghcmod-vim
+	url = git@github.com:eagletmt/ghcmod-vim.git
