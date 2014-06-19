@@ -25,9 +25,6 @@
 [submodule "vim/bundle/vim-airline"]
 	path = vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "ghcmod-vim"]
-	path = ghcmod-vim
-	url = git@github.com:eagletmt/ghcmod-vim.git
 [submodule "vim/bundle/ghcmod-vim"]
 	path = vim/bundle/ghcmod-vim
 	url = git@github.com:eagletmt/ghcmod-vim.git
