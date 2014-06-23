@@ -4,7 +4,6 @@ call pathogen#infect()
 call pathogen#helptags()
 set nocompatible
 set backspace=indent,eol,start  " more powerful backspacing
-setlocal spell spelllang=en_us
 " Now we set some defaults for the editor
 set history=500     " keep 500 lines of command line history
 set ruler       " show the cursor position all the time
@@ -22,7 +21,7 @@ set clipboard+=unnamed
 set wrapscan " Set the search scan to
 set ignorecase
 set laststatus=2
-" Set the status line the way i like it
+" Set the status line the way I like it
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n
 set lazyredraw " Don't update the display while executing macros
 
@@ -105,7 +104,7 @@ set statusline+=%*
 """"""""""""""""""""""""""""""""
 """""    Haskell Stuff     """""
 """"""""""""""""""""""""""""""""
-" use ghc functionality for haskell files
+" use ghc functionality for Haskell files
 au Bufenter *.hs compiler ghc
 
 " configure browser for haskell_doc.vim
@@ -115,6 +114,7 @@ let g:haddock_browser = "/usr/bin/google-chrome"
 set number
 filetype plugin indent on
 syntax on
+set spell spelllang=en_us
 " Toggling Autowrap (from: http://vim.wikia.com/wiki/Toggle_auto-wrap)
 set sr fo=roqm1 tw=78
 im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>_<BS><Right>
@@ -122,9 +122,9 @@ im <C-B> <C-O>:setl sr! fo<C-R>=strpart("-+",&sr,1)<CR>=tc<CR>_<BS><Right>
 set hidden
 if version >= 703
     set cm=blowfish
-    " Persistant Undo settings
+    " Persistent Undo settings
     set undofile
-    set undolevels=1000 " Maximusm number of changes that can be undone
+    set undolevels=1000 " Maximum number of changes that can be undone
     set undoreload=10000 " Maximum number of lines to save for undo on a buffer reload
     if has("win32")
         set undodir=$TEMP//
@@ -179,7 +179,7 @@ nnoremap <S-Tab> :bprevious<CR>
 
 
 " -- Save backups in a common folder instead of in the working directory. End
-"  with a double directory separator to create path indelendent filenames
+"  with a double directory separator to create path independent filenames
 if has("win32")
     set directory=$TEMP//
     set backupdir=$TEMP//
