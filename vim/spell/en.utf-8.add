@@ -45,3 +45,6 @@ UDC
 addtogroup
 Syrotiuk's
 Kossinets
+localhost
+dbname
+migrateAll
