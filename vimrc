@@ -109,6 +109,8 @@ au Bufenter *.hs compiler ghc
 
 " configure browser for haskell_doc.vim
 let g:haddock_browser = "/usr/bin/google-chrome"
+" Install: sudo apt-get install haskell-platform-doc
+let g:haddock_docdir = "/usr/share/doc/ghc-doc/html"
 
 """""""""""""""""""""""""""""""""
 set number
