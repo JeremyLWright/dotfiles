@@ -14,7 +14,6 @@ set showmatch
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 set hlsearch
 set clipboard+=unnamed
 
@@ -65,7 +64,7 @@ autocmd GUIEnter * set visualbell t_vb=
 
 
 if has("win32")
-    set guifont=DejaVu_Sans_Mono:h10:cANSI
+    set guifont=DejaVu_Sans_Mono_for_Powerline:h12:cANSI
 else
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
 endif
