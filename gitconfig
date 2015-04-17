@@ -1,3 +1,37 @@
 [user]
 	name = Jeremy Wright
 	email = jeremy@codestrokes.com
+[core]
+	autocrlf = true
+	whitespace = cr-at-eol
+	editor = c:/Users/Jw1055/git_editor.bat
+[push]
+	default = simple
+
+[alias]
+	last = log --pretty=format:'%C(yellow)%h%Creset -%C(green)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit
+	y = diff "@{yesterday}"
+	w = whatchanged
+	log1 = log --pretty=oneline --abbrev-commit --decorate
+
+[format]
+	pretty = format:'%C(yellow)%h%Creset -%C(green)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset'
+	date = relative
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow 
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan

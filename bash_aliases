@@ -2,6 +2,7 @@ PATH=$HOME/.cabal/bin:$PATH
 alias pmake='make -j8'
 setterm -blength 0
 set bell-style none
+alias ls='ls --color'
 
 rdgrep() {
     devgrep -Rn "$*" .
