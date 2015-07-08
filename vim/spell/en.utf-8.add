@@ -48,6 +48,7 @@ Kossinets
 localhost
 dbname
 migrateAll
+<<<<<<< HEAD
 blogging
 blogged
 blog
@@ -56,3 +57,4 @@ Wordpress
 URIs
 Disqus
 permalinks
+Refactored
