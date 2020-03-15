@@ -1,10 +1,9 @@
 [user]
 	name = Jeremy Wright
-	email = jeremy@codestrokes.com
+	email = jeremy@quiescent.us
+	signingkey = 35565A35483D7FEFA3DAAAC8DF646CF6ADF18D6D
 [core]
-	autocrlf = true
-	whitespace = cr-at-eol
-	editor = c:/Users/Jw1055/git_editor.bat
+	editor = gvim -f 
 [push]
 	default = simple
 
@@ -13,6 +12,12 @@
 	y = diff "@{yesterday}"
 	w = whatchanged
 	log1 = log --pretty=oneline --abbrev-commit --decorate
+[merge]
+	tool = bc3
+[mergetool "bc4"]
+	trustExitCode = true
+[mergetool "bc3"]
+	trustExitCode = true
 
 [format]
 	pretty = format:'%C(yellow)%h%Creset -%C(green)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset'
@@ -35,3 +40,5 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[commit]
+	gpgsign = true

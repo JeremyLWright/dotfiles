@@ -43,3 +43,6 @@
 [submodule "vim/bundle/elm-vim"]
 	path = vim/bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
+[submodule "vim/bundle/vim-pony"]
+	path = vim/bundle/vim-pony
+	url = git@github.com:jakwings/vim-pony.git

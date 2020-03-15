@@ -1,7 +1,5 @@
 let mapleader=","
 set encoding=utf-8
-call pathogen#infect()
-call pathogen#helptags()
 set nocompatible
 set backspace=indent,eol,start  " more powerful backspacing
 " Now we set some defaults for the editor
@@ -70,7 +68,7 @@ else
 endif
 
 if has("gui_running")
-    colors jellybeans
+    colors jellybeans-jwright
 else
     colors elflord
 endif
@@ -134,6 +132,14 @@ if version >= 703
     endif
 endif
 
+" == neco-ghc ==
+
+let g:haskellmode_completion_ghc = 1
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+
+" == nerd-tree ==
+
+map <Leader>n :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""
 """""     Latex Stuff      """""
 """"""""""""""""""""""""""""""""
@@ -153,6 +159,7 @@ endif
 
 "" Tabluar
 if exists(":Tabularize")
+let g:haskell_tabular = 1
     nmap <Leader>t= :Tabularize /=<CR>
     vmap <Leader>t= :Tabularize /=<CR>
     nmap <Leader>t: :Tabularize /:\zs<CR>
@@ -235,3 +242,5 @@ if version>=700
 endif
 
 
+call pathogen#infect()
+call pathogen#helptags()

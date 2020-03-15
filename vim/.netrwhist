@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='D:/workspaces/thesis/thesis'
-let g:netrw_dirhist_2='d:/workspaces/thesis'
-let g:netrw_dirhist_3='d:/workspaces/thesis/thesis'
-let g:netrw_dirhist_4='C:/Users/jwright/Desktop/JeremyLWright.github.io/themes/redlounge/static/css'
-let g:netrw_dirhist_5='D:/imagery_portal/imagery_portal/imagery_sink'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/jeremy/art/advent/2018/01/data'
+let g:netrw_dirhist_2='/home/jeremy/art/advent/2018'
+let g:netrw_dirhist_3='/home/jeremy/art/advent'
+let g:netrw_dirhist_4='/home/jeremy/art/advent/2018'
+let g:netrw_dirhist_5='/home/jeremy/art/advent/2018/03'
+let g:netrw_dirhist_6='/home/jeremy/art/advent/2018'
+let g:netrw_dirhist_7='/home/jeremy/art/advent/2018/04/data'
+let g:netrw_dirhist_8='/home/jeremy/art/advent/2018/04'
+let g:netrw_dirhist_9='/home/jeremy/art/advent/build/2018/04/CMakeFiles'
